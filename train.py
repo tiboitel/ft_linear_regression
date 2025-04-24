@@ -11,7 +11,7 @@ X_mean, X_std = X.mean(), X.std()
 X_norm = (X - X_mean) / X_std;
 
 theta0, theta1 = 0.0, 0.0
-alpha = 0.01 # learning rate
+alpha = 0.05 # learning rate
 num_iters = 1000
 
 def predict(x0, x1):

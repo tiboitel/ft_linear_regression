@@ -10,4 +10,5 @@ X_std = model['X_std']
 mileage = float(input("Enter mileage of the car: "))
 x_norm = (mileage - X_mean) / X_std
 y_pred = theta0 + theta1 * x_norm
-print(f"Estimated price: ${y_pred:.2f}")
+y_pred = round(y_pred)
+print(f"Estimated price: {y_pred:d}$")

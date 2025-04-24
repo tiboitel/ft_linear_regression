@@ -1,2 +1,4 @@
-env
-models/models.json
+.env
+.venv
+venv/
+env/
