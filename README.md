@@ -26,7 +26,18 @@ Before you embark on this beautiful, soul-crushing journey, install the dependen
 
 **Train the model:**
 ```python
+# Default usage
 python3 train.py
+
+# Custom learning rate
+python3 train.py --alpha 0.01
+
+# Custom iterations
+python3 train.py --iterations 5000
+
+# Both
+python3 train.py --alpa 0.1 --iterations 3000
+
 ```
 
 Sit back, relax, and watch your machine learn what life has already taught you — more mileage = less money.
