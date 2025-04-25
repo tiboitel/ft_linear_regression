@@ -90,15 +90,25 @@ Sit and admire the curve of capitalism.
 
 ### 🧾 File Structure
 ```
-├── data/
-│   └── data.csv          # The holy scripture of km and price
-├── models/
-│   └── model.json        # The saved wisdom of your AI monk
-├── train.py              # The temple of learning
-├── predict.py            # Ask your modern pythia
-├── plot.py               # Visual art for your linear gradient descent regression
-├── requirements.txt      # Dependencies. Blame them when it breaks
-└── README.md             # You're here. Congrats!
+├── data
+│   └── data.csv        # The holy scripture of KM and price
+├── install.sh          # Setup the temple of wisdom
+├── models
+│   └── model.json      # The saved wisdom of your AI Jacky-tuning Monk.
+├── plot.py             # Visual art for your linear gradient
+├── predict.py          # Ask your modern pythia
+├── README.md           # You're here. Congrats !
+├── requirements.txt    # Dependencies. Blame then when it break.
+├── src
+│   ├── config.py       # Assure to don't lose your PATH
+│   ├── data_loader.py  # The scribe of the scripture
+│   ├── __init__.py     # Could be useful one day
+│   ├── linear_model.py # The temple of learning
+│   ├── model_io.py     # How the pythia read the stars
+│   ├── plotter.py      # The Artist
+│   ├── predictor.py    # The Magician
+│   └── utils.py        # Whatever you can't put elsewhere
+└── train.py            # Access door of the temple
 ```
 
 ## 🗿 Final Words
