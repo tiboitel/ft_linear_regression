@@ -15,7 +15,7 @@ So if you ever looked at a rusty 200k-kilometer car and whispered, *"How much ar
 Before you embark on this beautiful, soul-crushing journey, install the dependencies:
 
 ```bash
-pip install -r requirements.txt
+./install.sh
 ```
  
 >   ***Pro tip**: Use a virtual environment. Otherwise your machine might file a lawsuit for dependency abuse.*
