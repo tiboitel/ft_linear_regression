@@ -8,11 +8,11 @@ def plot_data_and_model(X, y, model):
     new_X = np.linspace(X.min(), X.max(), 100)
     new_X_norm = (new_X - model['X_mean']) / model['X_std']
     preds = model['theta0'] + model['theta1'] * new_X_norm;
+    plt.grid(True)
     plt.plot(new_X, preds, label='Fitted line', color='red')
     plt.xlabel('Mileage')
     plt.ylabel('Price')
     plt.title('Linear Regression Fit')
     plt.legend()
-    plt.grid(True)
     plt.tight_layout()
     plt.show()

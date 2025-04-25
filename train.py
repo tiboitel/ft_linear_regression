@@ -6,7 +6,7 @@ def main():
     print("Initialize model training.")
     try:
         X, y = load_data()
-        model = train_linear_regression(X, y)
+        model = train_linear_regression(X, y, 0.5, 1000)
         save_model(model)
         print("Training complete. Model saved.")
     except Exception as e:
