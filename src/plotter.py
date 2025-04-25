@@ -13,6 +13,6 @@ def plot_data_and_model(X, y, model):
     plt.ylabel('Price')
     plt.title('Linear Regression Fit')
     plt.legend()
-    plit.grid(True)
+    plt.grid(True)
     plt.tight_layout()
     plt.show()
