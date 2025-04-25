@@ -1,14 +1,12 @@
-import json
+from src_model_io import load_model
+from src.predictor import estimate_price_from_input
 
-with open('models/model.json') as f:
-    model = json.load(f)
-theta0 = model['theta0']
-theta1 = model['theta1']
-X_mean = model['X_mean']
-X_std = model['X_std']
+def main():
+    try:
+        model = load_model()
+        estimate_price_from_input(model)
+    except Exception as e:
+        print(f"Prediction failed: {e}")
 
-mileage = float(input("Enter mileage of the car: "))
-x_norm = (mileage - X_mean) / X_std
-y_pred = theta0 + theta1 * x_norm
-y_pred = round(y_pred)
-print(f"Estimated price: {y_pred:d}$")
+if __name__ = "__main__"):
+    main()
