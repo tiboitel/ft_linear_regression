@@ -12,13 +12,17 @@ So if you ever looked at a rusty 200k-kilometer car and whispered, *"How much ar
 
 ## 📦 Installation
 
-Before you embark on this beautiful, soul-crushing journey, install the dependencies:
+Before you embark on this beautiful, soul-crushing journey, clone the repository and install the dependencies:
 
 ```bash
+git clone https://github.com/tiboitel/ft_linear_regression.git
+cd ft_linear_regression
 ./install.sh
+chmod +x install.sh
+source .venv/bin/activate
 ```
  
->   ***Pro tip**: Use a virtual environment. Otherwise your machine might file a lawsuit for dependency abuse.*
+>   ***Pro tip**: Don't forget to activate your virtual environment. Otherwise your machine might file a lawsuit for dependency abuse.*
 
 ---
 
@@ -36,7 +40,7 @@ python3 train.py --alpha 0.01
 python3 train.py --iterations 5000
 
 # Both
-python3 train.py --alpa 0.1 --iterations 3000
+python3 train.py --alpha 0.1 --iterations 3000
 
 ```
 
@@ -51,7 +55,7 @@ Type in a car’s mileage. Get an estimated price. Panic at how accurate it is.
 
 **Visualize the magic:**
 ```python
-    python3 plot.py
+python3 plot.py
 ```
    See the data. See the line. Understand your own fate.
 
@@ -121,6 +125,14 @@ Sit and admire the curve of capitalism.
 │   └── utils.py        # Whatever you can't put elsewhere
 └── train.py            # Access door of the temple
 ```
+
+## 🔨 Test
+
+Folks, when time come to run the tests My friends, when it comes time to run tests, don't sweat it. It's relatively simple. Simply run the command
+
+```tests pytest/```
+
+Enjoy the little green fields and the beauty of well-written code while sipping your Estus in front of your screen.
 
 ## 🗿 Final Words
 

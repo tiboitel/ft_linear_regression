@@ -46,6 +46,11 @@ for file in "${REQUIRED_FILES[@]}"; do
     fi
 done
 
+MODELS_DIRECTORY="/models"
+
+if [! -d "$MODELS_DIRECTORY"]
+    mkdir $MODELS_DIRECTORY
+
 echo "✅ All required files found."
 
 # Optional: Pre-compile Python files to check syntax
