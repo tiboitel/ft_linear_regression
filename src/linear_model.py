@@ -10,13 +10,13 @@ def train_linear_regression(X, y, alpha=0.05, iterations=1000):
     y_pred = 0.0
 
     for i in range(iterations):
-        y_pred = theta0 + theta1 * X_norm;
-        errors = y_pred - y;
-        grad0 = (1/m) * np.sum(errors);
-        grad1 = (1/m) * np.sum(errors * X_norm);
+        y_pred = theta0 + theta1 * X_norm
+        errors = y_pred - y
+        grad0 = (1/m) * np.sum(errors)
+        grad1 = (1/m) * np.sum(errors * X_norm)
 
-        theta0 -= alpha * grad0;
-        theta1 -= alpha * grad1;
+        theta0 -= alpha * grad0
+        theta1 -= alpha * grad1
 
         if i % 100 == 0:
             cost = (1/(2*m)) * np.sum(errors**2)

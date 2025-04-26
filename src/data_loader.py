@@ -10,4 +10,4 @@ def load_data():
     except FileNotFoundError:
         raise FileNotFoundError(f"Dataset not found at {DATA_PATH}")
     except Exception as e:
-        raise RuntimeError(f"Failed to load data: str{e}")
+        raise RuntimeError(f"Failed to load data: {str(e)}")

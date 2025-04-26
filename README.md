@@ -17,8 +17,8 @@ Before you embark on this beautiful, soul-crushing journey, clone the repository
 ```bash
 git clone https://github.com/tiboitel/ft_linear_regression.git
 cd ft_linear_regression
-./install.sh
 chmod +x install.sh
+./install.sh
 source .venv/bin/activate
 ```
  
@@ -128,9 +128,9 @@ Sit and admire the curve of capitalism.
 
 ## 🔨 Test
 
-Folks, when time come to run the tests My friends, when it comes time to run tests, don't sweat it. It's relatively simple. Simply run the command
+Ashen one, when it comes time to run the tests, don't sweat it. It's relatively simple. Just run the command:
 
-```tests pytest/```
+```pytests test/```
 
 Enjoy the little green fields and the beauty of well-written code while sipping your Estus in front of your screen.
 

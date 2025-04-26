@@ -48,7 +48,7 @@ done
 
 MODELS_DIRECTORY="/models"
 
-if [! -d "$MODELS_DIRECTORY"]
+if [ ! -d "$MODELS_DIRECTORY"]
     mkdir $MODELS_DIRECTORY
 
 echo "✅ All required files found."

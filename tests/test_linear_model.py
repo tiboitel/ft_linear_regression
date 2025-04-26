@@ -12,3 +12,10 @@ def test_train_and_predict():
     model = train_linear_regression(X, y, alpha=0.1, iterations=1000)
     pred = predict_price(6, model)
     assert pred == pytest.approx(12, rel=0.1)
+
+def test_train_regression_convergence():
+    X = np.array([1, 2, 3, 4, 5])
+    y = np.array([2, 4, 6, 8, 10])
+    model  = train_linear_regression(X, y, alpha=0.1, iterations=500)
+    assert abs(float(model["theta1"]) - 2.0) < 1
+    assert abs(model["theta0"]) < 8
