@@ -22,9 +22,9 @@ def train_linear_regression(X, y, alpha=0.05, iterations=1000):
             cost = (1/(2*m)) * np.sum(errors**2)
             print(f"Iter {i:4d}: cost={cost:.4f}, theta0={theta0:.4f}, theta1={theta1:.4f}")
 
-    y_pred = [theta0 + theta1 * xi for xi in X]
+    y_pred = [theta0 + theta1 * ((xi - X_mean) / X_std) for xi in X]
     training_mse = compute_mse(y, y_pred)
-    print(f"Training completed. Mean Squared Error on training set: {training_mse:.4f}")
+    print(f"Mean Squared Error on training set: {training_mse:.4f}")
     return {
         'theta0': theta0,
         'theta1': theta1,

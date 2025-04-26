@@ -8,7 +8,7 @@ VENV_DIR="$PROJECT_ROOT/.venv"
 REQUIREMENTS_FILE="$PROJECT_ROOT/requirements.txt"
 PYTHON=${PYTHON:-python3}
 
-echo "📦 Setting up 'tiboitel-ft_linear_regression'..."
+echo "📦 Setting up 'ft_linear_regression'..."
 
 # Check if Python 3 is installed
 if ! command -v "$PYTHON" &> /dev/null; then
@@ -35,7 +35,6 @@ pip install -r "$REQUIREMENTS_FILE"
 # Validate expected files
 REQUIRED_FILES=(
     "$PROJECT_ROOT/data/data.csv"
-    "$PROJECT_ROOT/models/model.json"
     "$PROJECT_ROOT/src/config.py"
 )
 
